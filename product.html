@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/common.css">
+
+    <link rel="stylesheet" href="css/product.css ">
+
+
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function () {
+
+            // 향수 정보 변경 제이쿼리
+            $('button:nth-of-type(1)').click(function () {
+                $('#box1').show();
+                $('#box2').hide();
+                $('#box3').hide();
+            });
+            $('button:nth-of-type(2)').click(function () {
+                $('#box2').show();
+                $('#box1').hide();
+                $('#box3').hide();
+            });
+            $('button:nth-of-type(3)').click(function () {
+                $('#box3').show();
+                $('#box1').hide();
+                $('#box2').hide();
+            });
+
+
+            // 리뷰창 변경 제이쿼리
+            $('.nav li:nth-of-type(1) button').click(function () {
+                $('#bag').show();
+                $('#qa').hide();
+            });
+            $('.nav li:nth-of-type(2) button').click(function () {
+                $('#bag').hide();
+                $('#qa').show();
+            });
+
+
+
+            // 이미지 변경 제이쿼리 목록1
+            $(".choice:nth-of-type(1) img").hover(function () {
+                $(this).attr("src", "img/choice1_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/choice1.jpg").css("opacity", "1");
+            });
+            $(".choice:nth-of-type(2) img").hover(function () {
+                $(this).attr("src", "img/choice2_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/choice2.jpg").css("opacity", "1");
+            });
+            $(".choice:nth-of-type(3) img").hover(function () {
+                $(this).attr("src", "img/choice3_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/choice3.jpg").css("opacity", "1");
+            });
+
+            // 이미지 변경 제이쿼리 목록2
+            $(".product:nth-of-type(1) img").hover(function () {
+                $(this).attr("src", "img/product1_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/product1.jpg").css("opacity", "1");
+            });
+
+            // 이미지 변경 제이쿼리 목록3
+            $(".product2:nth-of-type(1) img").hover(function () {
+                $(this).attr("src", "img/product2_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/product2.jpg").css("opacity", "1");
+            });
+            $(".product2:nth-of-type(2) img").hover(function () {
+                $(this).attr("src", "img/product3_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/product3.jpg").css("opacity", "1");
+            });
+            $(".product2:nth-of-type(3) img").hover(function () {
+                $(this).attr("src", "img/product4_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/product4.jpg").css("opacity", "1");
+            });
+
+            // 이미지 변경 제이쿼리 목록4
+            $(".product3:nth-of-type(1) img").hover(function () {
+                $(this).attr("src", "img/product5_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/product5.jpg").css("opacity", "1");
+            });
+            $(".product3:nth-of-type(2) img").hover(function () {
+                $(this).attr("src", "img/product6_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/product6.jpg").css("opacity", "1");
+            });
+            $(".product3:nth-of-type(3) img").hover(function () {
+                $(this).attr("src", "img/product7_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/product7.jpg").css("opacity", "1");
+            });
+
+            // 이미지 변경 제이쿼리 목록5
+            $(".product4:nth-of-type(1) img").hover(function () {
+                $(this).attr("src", "img/product8_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/product8.jpg").css("opacity", "1");
+            });
+            $(".product4:nth-of-type(2) img").hover(function () {
+                $(this).attr("src", "img/product9_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/product9.jpg").css("opacity", "1");
+            });
+            $(".product4:nth-of-type(3) img").hover(function () {
+                $(this).attr("src", "img/product10_2.jpg").css("opacity", "0.7");
+            }, function () {
+                $(this).attr("src", "img/product10.jpg").css("opacity", "1");
+            });
+
+            
+            // 필터리스트 변경 제이쿼리
+            $('.filter button:nth-of-type(1) ').click(function () {
+                $('.opt1').show();
+                $('.opt2').hide();
+                $('.opt3').hide();
+                $('.opt4').hide();
+            });
+            $('.filter button:nth-of-type(2) ').click(function () {
+                $('.opt2').show();
+                $('.opt1').hide();
+                $('.opt3').hide();
+                $('.opt4').hide();
+            });
+            $('.filter button:nth-of-type(3) ').click(function () {
+                $('.opt3').show();
+                $('.opt1').hide();
+                $('.opt2').hide();
+                $('.opt4').hide();
+            });
+            $('.filter button:nth-of-type(4) ').click(function () {
+                $('.opt4').show();
+                $('.opt1').hide();
+                $('.opt2').hide();
+                $('.opt3').hide();
+            });
+
+
+        });
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="top">
+            <p><b>Receive a Complimentary Travel Size Essential on Orders $100+</b></p>
+        </div>
+        <div class="meun">
+            <div id="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+
+            <div id="nav">
+                <ul>
+                    <li><a href="product.html">FRAGRANCES</a></li>
+                    <li><a href="product.html">HOME SCENITING</a></li>
+                    <li><a href="product.html">BATH & BODY</a></li>
+                    <li><a href="product.html">GIFTS & SETS</a></li>
+                    <li><a href="product.html">ABOUT US</a></li>
+                </ul>
+                <div id="icon">
+                    <input type="text" placeholder="SEARCH">
+                    <img src="img/icon.png" alt="서치">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <section>
+        <div id="list">
+            <h4>FRAGRANCES</h4> <br>
+            <ul>
+                <li>FRAGRANCES</li>
+                <li>Home scenting</li>
+                <li>Bath & Body</li>
+                <li>Gifts & Sets</li>
+            </ul>
+            <br>
+            <hr style="color: #666;"><br>
+    
+            <h4>FILTER BY</h4>
+            <br>
+    
+            <hr style="color: #666;"><br>
+    
+    
+            <div class="filter">
+                <button type="button">Fragrance Collection</button>
+                <hr>
+                <div class="opt1">
+                    <input type="checkbox" name="filter" value="(untitled)">(untitled) <br>
+                    <input type="checkbox" name="filter" value="Mutiny">Mutiny <br>
+                    <input type="checkbox" name="filter" value="REPLICA">REPLICA <br>
+                </div>
+
+                <button type="button">By Season</button>
+                <hr>
+                <div class="opt2">
+                    <input type="checkbox" name="filter" value="Fall">Fall <br>
+                    <input type="checkbox" name="filter" value="Spring">Spring <br>
+                    <input type="checkbox" name="filter" value="Summer">Summer <br>
+                    <input type="checkbox" name="filter" value="Winter">Winter <br>
+                </div>
+
+                <button type="button">By sensation</button>
+                <hr>
+                <div class="opt3">
+                    <input type="checkbox" name="filter" value="clean and fresh">clean and fresh <br>
+                    <input type="checkbox" name="filter" value="floral and delicate">floral and delicate <br>
+                    <input type="checkbox" name="filter" value="Sunny & Invigorating">Sunny & Invigorating <br>
+                    <input type="checkbox" name="filter" value="warm and cozy">warm and cozy <br>
+                </div>
+
+                <button type="button">Fragrance Selection</button>
+                <hr>
+                <div class="opt4">
+                    <input type="checkbox" name="filter" value="Eau de parfum">Eau de parfum <br>
+                    <input type="checkbox" name="filter" value="Eau de toilette">Eau de toilette <br>
+                    <input type="checkbox" name="filter" value="Sets">Sets <br>
+                </div>
+
+                
+                                         
+                
+        
+                
+        
+                
+                
+            </div>
+        </div>
+
+        <!-- 목록1 -->
+
+        <div id="others">
+        
+            <div class="opt">
+                <span>(13 PRODUCTS)</span>
+                <select>
+                    <option value="BEST SELLERS">BEST SELLERS</option>
+                    <option value="TOP RATED">TOP RATED</option>
+                    <option value="PRICE LOW TO HIGH">PRICE LOW TO HIGH</option>
+                    <option value="PRICE HIGH TO LOW">PRICE HIGH TO LOW</option>
+                    <option value="NEW ARRIVALS">NEW ARRIVALS</option>
+                </select> <br>
+            </div>
+
+            <div id="other">
+
+                <div class="choice">
+                    <a href="sub.html"><img src="img/choice1.jpg" alt=""></a>
+                    <h4>REPLICA SAILING DAY</h4>
+                    <p>Sunny & Invigorating</p>
+            
+                    <select>
+                        <option value="3.4 oz, 100ml">3.4 oz, 100ml</option>
+                        <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                        <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+                    </select>
+            
+                    <button type="button">DISCOVER</button>
+                </div>
+            
+                <div class="choice">
+                    <a href="sub.html"><img src="img/choice2.jpg" alt=""></a>
+                    <h4>REPLICA UNDER THE LEMON TREES</h4>
+                    <p>Sunny & Invigorating</p>
+            
+                    <select>
+                        <option value="0.4 oz, 100ml">3.4 oz, 100ml</option>
+                        <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                        <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+                    </select>
+                    <button type="button">DISCOVER</button>
+                </div>
+            
+            
+            
+                <div class="choice">
+                    <a href="sub.html"><img src="img/choice3.jpg" alt=""></a>
+                    <h4>REPLICA BUBBLE BATH</h4>
+                    <p>Clean & Fresh</p>
+            
+                    <select>
+                        <option value="3.4 oz, 100ml">3.4 oz, 100ml</option>
+                        <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                        <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+                    </select>
+            
+                    <button type="button">DISCOVER</button>
+                </div>
+    
+            </div>
+
+        </div>
+
+        <!-- 목록2 -->
+
+        <div id="other2">
+
+            <div class="product">
+                <img src="img/product.jpg" alt="">
+                <h4>REPLICA LAZY SUNDAY MORNING</h4>
+                <p>Clean & Fresh</p>
+        
+                <select>
+                    <option value="3.4 oz, 100ml">3.4 oz, 100ml</option>
+                    <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                    <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+                </select>
+        
+                <button type="button">DISCOVER</button>
+            </div>
+
+            <div class="pic2">
+                <img src="img/pic2.jpg" alt="">
+                <h2>FIND YOUR PERFECT REPLICA MEMORY</h2>
+
+                <button>DISCOVER</button>
+            </div>    
+            
+
+        </div>
+
+        <!-- 목록3 -->
+
+        <div id="other3">
+
+            <div class="product2">
+                <img src="img/product2.jpg" alt="">
+                <h4>REPLICA FLOWER MARKET</h4>
+                <p>Floral & Delicate</p>
+        
+                <select>
+                    <option value="3.4 oz, 100ml">3.4 oz, 100ml</option>
+                    <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                    <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+                </select>
+        
+                <button type="button">DISCOVER</button>
+            </div>
+        
+            <div class="product2">
+                <img src="img/product3.jpg" alt="choice2">
+                <h4>REPLICA WHISPERS IN THE LIBRARY</h4>
+                <p>Warm & Cozy</p>
+        
+                <select>
+                    <option value="0.4 oz, 100ml">3.4 oz, 100ml</option>
+                    <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                    <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+                </select>
+                <button type="button">DISCOVER</button>
+            </div>
+        
+        
+        
+            <div class="product2">
+                <img src="img/product4.jpg" alt="choice3">
+                <h4>REPLICA MATCHA MEDITATION</h4>
+                <p>Floral & Delicate</p>
+        
+                <select>
+                    <option value="3.4 oz, 100ml">3.4 oz, 100ml</option>
+                    <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                    <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+                </select>
+        
+                <button type="button">DISCOVER</button>
+            </div>
+
+        </div>
+
+        <!-- 목록4 -->
+
+        <div id="other4">
+
+            <div class="product3">
+                <img src="img/product5.jpg" alt="">
+                <h4>REPLICA COFFEE BREAK</h4>
+                <p>Warm & Cozy</p>
+        
+                <select>
+                    <option value="3.4 oz, 100ml">3.4 oz, 100ml</option>
+                    <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                    <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+                </select>
+        
+                <button type="button">DISCOVER</button>
+            </div>
+        
+            <div class="product3">
+                <img src="img/product6.jpg" alt="">
+                <h4>REPLICA SPRINGTIME IN A PARK</h4>
+                <p>Floral & Delicate</p>
+        
+                <select>
+                    <option value="0.4 oz, 100ml">3.4 oz, 100ml</option>
+                    <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                    <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+                </select>
+                <button type="button">DISCOVER</button>
+            </div>
+        
+        
+        
+            <div class="product3">
+                <img src="img/product7.jpg" alt="">
+                <h4>REPLICA AUTUMN VIBES</h4>
+                <p>Earthy & Addictive</p>
+        
+                <select>
+                    <option value="3.4 oz, 100ml">3.4 oz, 100ml</option>
+                    <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                    <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+                </select>
+        
+                <button type="button">DISCOVER</button>
+            </div>
+
+        </div>
+
+        <!-- 목록5 -->
+
+        <div id="other5">
+
+            <div class="product4">
+                <img src="img/product8.jpg" alt="">
+                <h4>REPLICA ON A DATE</h4>
+                <p>Sunny & Invigorating</p>
+        
+                <select>
+                    <option value="3.4 oz, 100ml">3.4 oz, 100ml</option>
+                    <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                    <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+                </select>
+        
+                <button type="button">DISCOVER</button>
+            </div>
+        
+            <div class="product4">
+                <img src="img/product9.jpg" alt="">
+                <h4>(UNTITLED)</h4>
+                <p>Eau de parfum</p>
+        
+                <select>
+                    <option value="0.4 oz, 100ml">3.4 oz, 100ml</option>
+                    
+                </select>
+                <button type="button">DISCOVER</button>
+            </div>
+        
+        
+        
+            <div class="product4">
+                <img src="img/product10.jpg" alt="">
+                <h4>(UNTITLED) L'EAU</h4>
+                <p>Eau de toilette</p>
+        
+                <select>
+                    <option value="3.4 oz, 100ml">3.4 oz, 100ml</option>
+                    
+                </select>
+        
+                <button type="button">DISCOVER</button>
+            </div>
+
+        </div>
+        
+        </section>
+
+
+
+        <footer>
+
+            <div id="foot">
+                <div class="device">
+                    <div class="box">
+                        <h4>FRAGRANCE SELECTION</h4>
+                
+                        <p>Eau de toilette<br>
+                            Eau de parfum<br>
+                            Sets</p>
+                
+                    </div>
+                
+                
+                
+                    <div class="box">
+                        <h4>FRAGRANCE COLLECTION</h4>
+                
+                        <p>REPLICA<br>
+                            (untitled)<br>
+                            Mutiny</p>
+                
+                    </div>
+                
+                    <div class="box">
+                        <h4>HOMESCENTING</h4>
+                
+                        <p>Scented Candles<br>
+                            Diffusers</p>
+                
+                    </div>
+                
+                    <div class="box">
+                        <h4>BATH & BODY</h4>
+                    </div>
+                </div>
+        
+                <div class="device">
+        
+                <div class="box">
+                    <h4>OTHERS</h4>
+                    <p>Gifts & Sets</p>
+                </div>
+                
+                <div class="box">
+                    <h4>TOOLS AND SERVICES</h4>
+                
+                    <p>Store Locator<br>
+                        Fragrance Finder<br>
+                        Home Scenting Finder<br>
+                        About Us</p>
+                
+                </div>
+                </div>
+                
+                
+                
+        
+                
+        
+                <div class="cookies">
+                    <span>© Maison Margiela Fragrances 2022</span>
+                </div>
+        
+                <div class="cook">
+                    <span>Cookie · settings · Terms & Conditions · Site Map · Privacy Policy</span>
+                </div>
+        
+            </div>
+            </footer>
+</body>
+
+</html>

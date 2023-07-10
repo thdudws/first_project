@@ -1,0 +1,478 @@
+@charset "uft-8";
+
+
+
+section {
+    width: 1300px;
+    height: 3090px;
+    /* background-color: blanchedalmond; */
+    margin: 0 auto;
+    font-family: 'Courier Prime', monospace;
+}
+
+#list {
+    width: 275px;
+    height: auto;
+    /* background-color: paleturquoise; */
+    float: left;
+    margin: 10px 0 0 0;
+    position: sticky;
+    top: 20px;
+}
+
+#list h4:first-of-type {
+    margin: 10px 0 0 10px;
+}
+
+#list h4:nth-of-type(2) {
+    margin: 0 0 0 10px;
+}
+
+#list button {
+    font-family: 'Courier Prime', monospace;
+    width: 200px;
+    height: 30px;
+    border: none;
+    margin: 10px 0 10px 0;
+    background: none;
+}
+
+#list button:hover {
+    cursor: pointer;
+}
+
+#list button:first-child {
+    margin: -10px 0 5px 0;
+}
+
+#list li {
+    font-size: 15px;
+    font-family: 'Courier Prime', monospace;
+    margin: 0 0 5px 10px;
+}
+
+.filter>.opt1 {
+    width: 275px;
+    height: 100px;
+    /* background-color: plum;  */
+    text-align: left;
+    font-size: 15px;
+    display: none;
+}
+
+.filter>.opt2 {
+    width: 275px;
+    height: 130px;
+    /* background-color: plum;  */
+    text-align: left;
+    font-size: 15px;
+    display: none;
+}
+
+.filter>.opt3 {
+    width: 275px;
+    height: 130px;
+    /* background-color: plum; */
+    text-align: left;
+    font-size: 15px;
+    display: none;
+}
+
+.filter>.opt4 {
+    width: 275px;
+    height: 100px;
+    /* background-color: plum; */
+    text-align: left;
+    font-size: 15px;
+    display: none;
+}
+
+.filter input {
+    width: 50px;
+    margin: 10px 0 5px 10px;
+}
+
+/* 목록1 */
+
+#others {
+    width: 1025px;
+    height: 650px;
+    /* background-color: pink;  */
+    margin: -5px 0 0 0;
+    float: right;
+    text-align: right;
+}
+
+#others>.opt {
+    width: 100%;
+    text-align: right;
+}
+
+#others>.opt select {
+    width: 300px;
+    height: 50px;
+    margin: 20px 10px 0px 0;
+}
+
+#others>.opt span {
+    font-size: 15px;
+}
+
+#other>.choice {
+    width: 300px;
+    height: 515px;
+    /* background-color: papayawhip; */
+    float: left;
+    margin: 40px 0px 0 30px;
+    text-align: center;
+}
+
+#other>.choice button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#other img {
+    width: 255px;
+
+}
+
+#other img:hover {
+    opacity: 0.8;
+}
+
+#other>.choice h4 {
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+#other h4:hover {
+    opacity: 0.7;
+}
+
+#other p {
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-family: 'Courier Prime', monospace;
+    font-size: 13px;
+}
+
+#other select {
+    width: 290px;
+    height: 50px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Courier Prime', monospace;
+    margin: 20px 0 0 5px;
+    border: 1px solid #c5c5c5;
+}
+
+#other button {
+    width: 290px;
+    height: 50px;
+    margin: 20px 0 0 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* 목록2 */
+
+#other2 {
+    width: 1025px;
+    height: 610px;
+    /* background-color: powderblue;  */
+    margin: 0 auto;
+    float: right;
+}
+
+#other2>.product {
+    width: 300px;
+    height: 515px;
+    /* background-color: papayawhip; */
+    float: left;
+    margin: 40px 0px 0 30px;
+    text-align: center;
+}
+
+#other2>.product button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#other2 img {
+    width: 255px;
+
+}
+
+#other2>.product h4 {
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+#other2 h4:hover {
+    opacity: 0.7;
+}
+
+#other2 p {
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-family: 'Courier Prime', monospace;
+    font-size: 13px;
+}
+
+#other2 select {
+    width: 290px;
+    height: 50px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Courier Prime', monospace;
+    margin: 20px 0 0 5px;
+    border: 1px solid #c5c5c5;
+}
+
+#other2 button {
+    width: 290px;
+    height: 50px;
+    margin: 20px 0 0 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+#other2>.product button:nth-of-type(2) {
+    width: 100%;
+}
+
+#other2>.pic2 {
+    width: 560px;
+    height: 515px;
+    /* background-color: aqua; */
+    float: left;
+    margin: 40px 30px 0 60px;
+    position: relative;
+}
+
+#other2>.pic2 img {
+    width: 560px;
+    height: 515px;
+}
+
+#other2>.pic2 h2 {
+    position: absolute;
+    font-size: 30px;
+    top: 70%;
+    left: 5%;
+} 
+
+#other2>.pic2 button {
+    position: absolute;
+    top: 82%;
+    left: 4%;
+}
+
+#other2>.pic2 button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+/* 목록3 */
+
+#other3 {
+    width: 1025px;
+    height: 610px;
+    /* background-color: palevioletred;  */
+    margin: 0 auto;
+    float: right;
+}
+
+#other3>.product2 {
+    width: 300px;
+    height: 515px;
+    /* background-color: papayawhip; */
+    float: left;
+    margin: 40px 0px 0 30px;
+    text-align: center;
+}
+
+#other3>.product2 button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#other3 img {
+    width: 255px;
+
+}
+
+#other3 img:hover {
+    opacity: 0.8;
+}
+
+#other3>.product2 h4 {
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+#other3 h4:hover {
+    opacity: 0.7;
+}
+
+#other3 p {
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-family: 'Courier Prime', monospace;
+    font-size: 13px;
+}
+
+#other3 select {
+    width: 290px;
+    height: 50px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Courier Prime', monospace;
+    margin: 20px 0 0 5px;
+    border: 1px solid #c5c5c5;
+}
+
+#other3 button {
+    width: 290px;
+    height: 50px;
+    margin: 20px 0 0 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* 목록4 */
+
+#other4 {
+    width: 1025px;
+    height: 610px;
+    /* background-color: pink;  */
+    margin: 0 auto;
+    float: right;
+}
+
+#other4>.product3 {
+    width: 300px;
+    height: 515px;
+    /* background-color: papayawhip; */
+    float: left;
+    margin: 40px 0px 0 30px;
+    text-align: center;
+}
+
+#other4>.product3 button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#other4 img {
+    width: 255px;
+
+}
+
+#other4 img:hover {
+    opacity: 0.8;
+}
+
+#other4>.product3 h4 {
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+#other4 h4:hover {
+    opacity: 0.7;
+}
+
+#other4 p {
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-family: 'Courier Prime', monospace;
+    font-size: 13px;
+}
+
+#other4 select {
+    width: 290px;
+    height: 50px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Courier Prime', monospace;
+    margin: 20px 0 0 5px;
+    border: 1px solid #c5c5c5;
+}
+
+#other4 button {
+    width: 290px;
+    height: 50px;
+    margin: 20px 0 0 5px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* 목록5 */
+
+#other5 {
+    width: 1025px;
+    height: 610px;
+    /* background-color: pink;  */
+    margin: 0 auto;
+    float: right;
+}
+
+#other5>.product4 {
+    width: 300px;
+    height: 515px;
+    /* background-color: papayawhip; */
+    float: left;
+    margin: 40px 0px 0 30px;
+    text-align: center;
+}
+
+#other5>.product4 button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#other5 img {
+    width: 255px;
+
+}
+
+#other5 img:hover {
+    opacity: 0.8;
+}
+
+#other5>.product4 h4 {
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+#other5 h4:hover {
+    opacity: 0.7;
+}
+
+#other5 p {
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-family: 'Courier Prime', monospace;
+    font-size: 13px;
+}
+
+#other5 select {
+    width: 290px;
+    height: 50px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Courier Prime', monospace;
+    margin: 20px 0 0 5px;
+    border: 1px solid #c5c5c5;
+}
+
+#other5 button {
+    width: 290px;
+    height: 50px;
+    margin: 20px 0 0 5px;
+    background-color: #000;
+    color: #fff;
+}

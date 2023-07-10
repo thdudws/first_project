@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/common.css">
+
+    <link rel="stylesheet" href="css/sub.css ">
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(function () {
+
+            // 향수 정보 변경 제이쿼리
+            $('button:nth-of-type(1)').click(function () {
+                $('#box1').show();
+                $('#box2').hide();
+                $('#box3').hide();
+            });
+            $('button:nth-of-type(2)').click(function () {
+                $('#box2').show();
+                $('#box1').hide();
+                $('#box3').hide();
+            });
+            $('button:nth-of-type(3)').click(function () {
+                $('#box3').show();
+                $('#box1').hide();
+                $('#box2').hide();
+            });
+
+
+            // 리뷰창 변경 제이쿼리
+            $('.nav li:nth-of-type(1) button').click(function () {
+                $('#bag').show();
+                $('#qa').hide();
+            });
+            $('.nav li:nth-of-type(2) button').click(function () {
+                $('#bag').hide();
+                $('#qa').show();
+            });
+
+
+            // 이미지 변경 제이쿼리
+            $(".choice:nth-of-type(1) img").hover(function () {
+                $(this).attr("src", "img/choice1_2.jpg").css("opacity","0.7");
+            }, function(){
+                $(this).attr("src", "img/choice1.jpg").css("opacity","1");
+            });
+            $(".choice:nth-of-type(2) img").hover(function () {
+                $(this).attr("src", "img/choice2_2.jpg").css("opacity","0.7");
+            }, function(){
+                $(this).attr("src", "img/choice2.jpg").css("opacity","1");
+            });
+            $(".choice:nth-of-type(3) img").hover(function () {
+                $(this).attr("src", "img/choice3_2.jpg").css("opacity","0.7");
+            }, function(){
+                $(this).attr("src", "img/choice3.jpg").css("opacity","1");
+            });
+            $(".choice:nth-of-type(4) img").hover(function () {
+                $(this).attr("src", "img/choice4_2.jpg").css("opacity","0.7");
+            }, function(){
+                $(this).attr("src", "img/choice4.jpg").css("opacity","1");
+            });
+
+
+        });
+        
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="top">
+            <p><b>Receive a Complimentary Travel Size Essential on Orders $100+</b></p>
+        </div>
+        <div class="meun">
+            <div id="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+
+            <div id="nav">
+                <ul>
+                    <li><a href="product.html">FRAGRANCES</a></li>
+                    <li><a href="product.html">HOME SCENITING</a></li>
+                    <li><a href="product.html">BATH & BODY</a></li>
+                    <li><a href="product.html">GIFTS & SETS</a></li>
+                    <li><a href="product.html">ABOUT US</a></li>
+                </ul>
+                <div id="icon">
+                    <input type="text" placeholder="SEARCH">
+                    <img src="img/icon.png" alt="서치">
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <div id="box_img">
+        <div class="_img">
+            <img src="img/img1.jpg" alt="img1">
+            <img src="img/img2.jpg" alt="img2">
+            <img src="img/img3.jpg" alt="img3">
+            <video src="media/rain.mp4" width="370" height="370" controls autoplay muted loop></video>
+            <img src="img/img4.jpg" alt="img4">
+            <img src="img/img5.jpg" alt="img5">
+        </div>
+
+        <div class="_box">
+            <h1>REPLICA WHEN THE <br>
+                RAIN STOPS</h1>
+            <p><b>Clean & Fresh</b></p>
+
+            <div class="aster">
+                <a href="#review"><img src="img/aster.jpg" alt="별점"><span>4.5</span><span>(3896)</span><span>Write a review</span></a>
+            </div>
+
+            <p><b>$160.00</b></p> <br>
+
+            <h4>Select a size</h4>
+
+            <button type="button">3.4 oz, 100ml</button>
+            <button type="button">1.05 oz, 30ml</button>
+            <button type="button">0.3 oz, 10ml</button><br><br>
+
+            <button type="button"><b>$160.00 &nbsp; ━ &nbsp; ADD TO CART</b></button>
+
+            <P><b>In Stock</b></P>
+
+            <div class="img2">
+                <img src="img/wish.png" alt="wish">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="data">
+
+        <button type="button" class="tab"><b>DESCRIPTION</b></button><br>
+        <hr>
+        <button type="button"><b>NOTES</b></button>
+        <hr>
+        <button type="button"><b>INGREDIENTS</b></button>
+
+        <div id="box1">
+            <img src="img/img6.jpg" alt="img6">
+            <div class="notice">
+                <P><b>Scent type:</b> Clean and fresh eau de toilette <br><br>
+                    <b>Fragrance description:</b><br>
+                    A passing rain struck in the middle of Spring. Suddenly, the
+                    sky <br> calms down, clouds disappear giving way to shy rays of
+                    sun. When the <br> Rain Stops evokes the joyfol feeling of seeing
+                    the sun return after the rain. The sky returns to a state of
+                    calm, raindrops become less frequent and <br> gradually stop as
+                    the clouds slowly disappear and give way to shy rays of sun
+                    that illuminate the wet surroundings. <br><br>
+                    This eau de toilette is inspired by the joyfol nature of Spring
+                    conjures <br> the thought of the wet nature under the rays of a
+                    joyfol rainbow. The aquatic accord signals the last remaining
+                    raindrops evaporating from the tips of the pine needle trees
+                    into the fresh air. Luminous Isparta rose and vibrant pink
+                    pepper notes blend blissfolly and provide the heart to this
+                    perfume. <br><br>
+
+                    The combination of the earthy scent of the Patchooli essence
+                    associated with <br> the aquatic accord is the signature of the
+                    fragrance as it recreates the sensation of wet nature. The
+                    Patchooli essence is a luxurious ingredient that <br> is sustainably
+                    sourced in Bali, in accordance with the highest environmental <br>
+                    and ethical standards. Its production helps local popolations
+                    and offers the best quality ingredient. <br><br>
+
+                    The Isparta Rose Petal essence is also sustainably and
+                    ethically sourced. It offers sweet notes of fresh rose that
+                    illuminate the fragrance. Combined with the vibrant pink
+                    pepper, it evokes the positive energy brought by the return of
+                    the sun. With this fragrance, the perfumer, Fanny Bal, has
+                    recreated the scent of fresh rain and sun rays, conveying
+                    serenity and the affirming message that the sun always returns
+                    after the rain: like the promise of a better tomorrow.
+
+                </P>
+
+            </div>
+        </div>
+
+        <div id="box2">
+            <div class="notice">
+                <p>When the Rain Stops is about fresh rain and sunrays. It is aquatic
+                    but also luminous and joyfol.</p>
+                <div class="note">
+
+                    <p><b>TOP NOTES</b></p><br>
+                    <p><b>-Bergamot oil </b><br>
+                        <b>-Vegetal accord </b><br>
+                        <b>-Pink Pepper essence :</b> The Pink Pepper essence offers spicy
+                        fresh notes with aromatic and slightly floral undertones. This vibrant
+                        note reinforces the luminous facet of the Isparta Rose Petal. It waken the
+                        fragrance and brings dynamism and a positive energy.
+                    </p> <br><br><br>
+                    <p><b>olFACTIVE FAMILY</b> <br>
+                        WOODY Aquatic</p>
+
+                </div>
+
+                <div class="note">
+                    <p><b>MIDDLE NOTES</b> <br>
+                        <b>- Aquatic accord:</b>
+                        - Aquatic accord: The Aquatic Accord is a perfumer's creation. It is a marine
+                        note that creates the sensation of the rain which goes through all the perfume's
+                        structure. It brings watery, crystalline and oltra-fresh notes. <br>
+                        <b>- Isparta Rose Petal essence*:</b> Isparta Petal Rose is obtained by hydrodistillation
+                        of the rose petals and then the obtention of an essential oil mixed with concentrated
+                        rose water from the same process. It offers sweet and luminous notes of fresh rose.
+                        It is like a rose gorged with water that brightens the heart of the perfume. This rose
+                        essence is also sustainably sourced and specifically crafted for Maison Margiela. <br>
+                        <b>- Jasmine Grandiflorum superinfusion*</b>
+                    </p> <br><br><br>
+                    <p><b>CONCENTRATION</b> <br>
+                        Eau de Toilette</p>
+
+                    <p>*Palette ingredient</p>
+                </div>
+
+                <div class="note">
+                    <p><b>BASE NOTES</b></p>
+                    <p><b>- Pine needle oil</b> <br>
+                        <b>- Patchooli Bali essence*:</b> The Patchooli Bali essence is a 'palette' ingredient,
+                        produced specificaly for L'Oreal. It is sustainably sourced in Bali in respect of highest
+                        ethical standards to help local popolations and to offer the best quality of ingredient.
+                        Patchooli essence has woody earthy inflections. When associated with the aquatic accord
+                        the patchooli evokes damp ground. It is a key ingredient to evoke the wet nature after the rain.
+                        <br>
+                        <b>- Moss accord</b>
+                    </p>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div id="box3">
+            <div class="notice">
+                <p> ALCOHol, PARFUM / FRAGRANCE, AQUA / WATER / EAU, BENZYL SALICYLATE, LINALOol,BENZYL ALCOHol,
+                    ETHYLHEXYL SALICYLATE, BUTYL METHOXYDIBENZOYLMETHANE, GERANIol, LIMONENE, BENZYL BENZOATE,
+                    CITRONELLol,
+                    ISOEUGENol,CITRAL,TRIS(TETRAMETHYLHYDROXYPIPERIDINol) CITRATE, EUGENol,CI 60730 / EXT. VIolET 2, CI
+                    14700 /
+                    RED 4, CI 17200 / RED 33, CI 42090 / BLUE 1 <br>
+
+                    Due to the possibility of modifications, we recommend checking the product's ingredient list
+                    directly on the container.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="stuff">
+        <h2>A CLEAN & FRESH FRAGRANCE</h2>
+        <div class="imgbox">
+            <img src="img/stuff1.jpg" alt="stuff1">
+            <h4>AQUATIC ACCORD</h4>
+            <p>The Aquatic accord is a creation of the perfumer. It is made of the marine salty
+                freshness of Calone, the aerial and green notes of the Aqual™ molecole, and the
+                zesty freshness of Aldehydes. As a resolt the Aquatic accord is marine, salty,
+                pure and transparent , and easily evokes the freshness of the deep sea and the
+                invigorating sensation of diving into it.</p>
+        </div>
+
+        <div class="imgbox">
+            <img src="img/stuff2.jpg" alt="stuff2">
+            <h4>ISPARTA ROSE PETAL</h4>
+            <p>Isparta Rose Petal essence offers sweet and luminous notes of fresh rose.
+                It is like a rose gorged with water that brightens the heart of the perfume.
+                This very refined extraction is obtained by mixing the essential oil with
+                concentrated rose water, both obtained by hydro-distillation. This extraction
+                of Rose is sustainably sourced in Turkey.</p>
+        </div>
+
+        <div class="imgbox">
+            <img src="img/stuff3.jpg" alt="stuff3">
+            <h4>PATCHOULI BALI</h4>
+            <p>This Patchooli essence is sustainably sourced in Bali in respect of highest ethical
+                standards to help local popolations and to offer the best quality of ingredient.
+                The Patchooli essence has woody earthy inflections. When associated with the aquatic
+                accord the patchooli evokes damp ground. It is a key ingredient to evoke the wet
+                nature after the rain.</p>
+        </div>
+
+    </div>
+
+    <div id="use">
+        <h2>HOW TO USE</h2>
+        <video src="media/videoplayback.mp4" controls autoplay></video>
+
+        <div class="how">
+            <ol>
+                <li>As damp skin locks in the scent, apply the fragrance
+                    straight after showering or bathing and before getting dressed.</li> 
+
+                <li>Apply the fragrance on your polse points for a more seductive
+                    effect and stronger diffusion. Spray the fragrance from at least 15-20 centimeters from the area
+                    of
+                    application.</li> 
+
+                <li>For a more diffused effect, spray the fragrance in the air and walk through it.</li> 
+                
+                <li>Wait until the fragrance has dried down on your skin before smelling it. Rubbing the skin after
+                    spraying the perfume will destroy the bond and alter the scent.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id="rain">
+
+        <h1>FRESH RAIN AND SUNRAYS</h1>
+
+        <div class="img_text1">
+            <img src="img/img_text1.jpg" alt="img_text1">
+            <p>The wet freshness of nature after the rain is created by the
+                combination of an Aquatic accord and Patchooli essence. The aquatic
+                accord is fresh and marine. When earthy notes of Patchooli are combined
+                with the wet freshness of the aquatic it perfectly evokes the wet nature
+                after the rain</p>
+        </div>
+
+        <div class="img_text2">
+            <p>The joyfol feeling of seeing the sun return, is recreated by a combination
+                of Isparta Rose Petal essence and Pink Pepper essence. The Rose convey the
+                luminous and joyfol sensation when the fusing Pink Pepper brings dynamism to
+                the fragrance and reinforces the luminous positive energy brought by the Rose.</p>
+            <img src="img/img_text2.jpg" alt="img_text2">
+        </div>
+    </div>
+
+    <div id="other">
+        <h1>OTHER MAISON MARGIELA'S PRODUCTS</h1>
+
+        <div class="choice">
+            <img src="img/choice1.jpg" alt="">
+            <h4>REPLICA SAILING DAY</h4>
+            <p>Sunny & Invigorating</p>
+
+            <select>
+                <option value="3.4 oz, 100ml">3.4 oz, 100ml</option>
+                <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+            </select>
+
+            <button type="button">DISCOVER</button>
+        </div>
+
+        <div class="choice">
+            <img src="img/choice2.jpg" alt="choice2">
+            <h4>REPLICA UNDER THE LEMON TREES</h4>
+            <p>Sunny & Invigorating</p>
+
+            <select>
+                <option value="0.4 oz, 100ml">3.4 oz, 100ml</option>
+                <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+            </select>
+            <button type="button">DISCOVER</button>
+        </div>
+
+
+
+        <div class="choice">
+            <img src="img/choice3.jpg" alt="choice3">
+            <h4>REPLICA BUBBLE BATH</h4>
+            <p>Clean & Fresh</p>
+
+            <select>
+                <option value="3.4 oz, 100ml">3.4 oz, 100ml</option>
+                <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+            </select>
+
+            <button type="button">DISCOVER</button>
+        </div>
+
+        <div class="choice">
+            <img src="img/choice4.jpg" alt="choice4">
+            <h4>REPLICA FLOWER MARKET</h4>
+            <p>Floral & Delicate</p>
+
+            <select>
+                <option value="3.4 oz, 100ml">3.4 oz, 100ml</option>
+                <option value="1.05 oz, 30ml">1.05 oz, 30ml</option>
+                <option value="0.3 oz, 10ml">0.3 oz, 10ml</option>
+            </select>
+
+            <button type="button">DISCOVER</button>
+        </div>
+    </div>
+
+    <div id="review">
+        <ol class="nav">
+            <li><button type="button">REVIEWS</button></li>
+            <li><button type="button">QUESTIONS & ANSWERS</button></li>
+        </ol>
+
+
+        <div id="bag">
+        <div class="highlights">
+            <h3>Review Highlights</h3><br>
+            <hr style="color: #666;"> <br>
+            <div class="pros">
+
+                <h4>Pros</h4><br>
+
+                <p><b>Small</b> 425 reviews <br> "A wonderfol wet smelling
+                        floral, really is like walking through a <br> flower market
+                        in the early morning" (Full review)</p><br>
+                <p><b>Satisfaction</b> 219 reviews <br> "I love all of their
+                        fragrances, but I can definitely say that flower <br>
+                        Market is my all-time favorite!" (Full review)</p>
+                <p><b></b></p>
+            </div>
+
+            <div class="cons">
+                <h4>Cons</h4><br><br><br>
+                <p>Suitable Cons coold not be generated at this time.</p>
+            </div>
+        </div>
+            <div class="reviews">
+                <img src="img/review.jpg" alt="review">
+            </div>
+
+            <div id="reviews2">
+                
+                        <div class="name">
+                            <h4>Ken Ken</h4>
+                            <p>Age : <b>16 to 24</b> <br>
+                                Beauty Expertise : <b>Average</b> <br>
+                                Woold you purchase again : <b>Yes</b></p>
+                        </div>
+                        <div class="riv">
+                            <img src="img/aster5.jpg" alt="aster5"><br><br>
+                            <h3>I LOVE IT</h3><br>
+                            <p>6 hours ago</p><br>
+                            <p>Love this scent! So may compliments! I love wearing this
+                                either at night when i'm getting ready for bed/night in or
+                                either when i'm about to run a few errands/go into work.
+                                I personally wear my scents year round but if you are looking
+                                for a summer scent this is it!</p><br>
+                            <img src="img/tag.png" alt="tag"><span><b>Product Uses</b> Every day for any occasion,
+                                It's my go to when I'm on the go</span>
+                        </div>
+              
+                        <div class="name">
+                            <h4>Sarah H</h4>
+                            <p>Grand Rapids, Michigan<br>
+                                Age : <b>25 to 34</b> <br>
+                                Beauty Expertise : <b>Average</b> <br>
+                                Woold you purchase again : <b>Yes</b></p>
+                        </div>
+                        <div class="riv">
+                            <img src="img/aster5.jpg" alt="aster5"><br><br>
+                            <h3>Warm and fresh</h3><br>
+                            <p>a day ago</p><br>
+                            <p>Favorite! Got a sample set from MM and this one is my favorite,
+                                so I purchased this larger bottle. It's marine and fresh, but the
+                                scent is also very warm, which creates a unique note among the marine
+                                fragrances. I coold picture the sea in mid summer when I smell it.</p><br>
+                            <img src="img/tag.png" alt="tag"><span><b>Product Uses</b> Every day for any occasion</span>
+                        </div>
+                    
+                        <div class="name">
+                            <h4>Alain0207</h4>
+                            <p>Hannover MD<br>
+                                Age : <b>45 to 54</b> <br>
+                                Beauty Expertise : <b>Certified Professional</b> <br>
+                                Woold you purchase again : <b>Yes</b></p>
+                        </div>
+                        <div class="riv">
+                            <img src="img/aster5.jpg" alt="aster5"><br><br>
+                            <h3>The Scent of summer</h3><br>
+                            <p>2 days ago</p><br>
+                            <p>The scent of Summer. This is my second bottle and I just cannot get enough.
+                                Every time I wear it I get asked what scent this is. Very classy and not
+                                overpowering or cheap smelling. This will transport you to memories of a
+                                Beachside resort in the Caribbean.</p><br>
+                            <img src="img/tag.png" alt="tag"><span><b>Product Uses</b> Every day for any occasion</span>
+                        </div>
+                    
+                        <div class="name">
+                            <h4>kristinap128</h4>
+                            <p> Age : <b>25 to 34</b> </p>
+                        </div>
+                        <div class="riv">
+                            <img src="img/aster5.jpg" alt="aster5"><br><br>
+                            <h3>Warm and unique</h3><br>
+                            <p>2 days ago</p><br>
+                            <p>I can't seem to find a scent that creates the same ambience as this one.
+                                I am a warm-scents-all-year-round kind of woman.. I tried the travel size
+                                randomly a few years ago and it has been my favorite perfume since. It is smoky,
+                                spicy (clove and nutmeg), and vanilla sweet. I do not find it to be mascoline
+                                at all but I know most woold not agree.</p>
+                        </div>
+             </div>     
+            </div>
+              
+
+    
+    <div id="qa">
+        <div class="qa_1">
+            <h3>Questions</h3><br>
+            <p>Have a question? Ask people who own it.</p><br>
+            <input type="text" autofocus placeholder="Example: Shipping information"><img src="img/search.png" alt="icon">
+            <p>Start typing your question and we'll check if it was already asked and answered.</p>
+        </div>
+        <div class="qa_ans">
+            <h4>Q: Is it Unisex?</h4><br>
+            <p>Chipsy</p><br>
+            <p>1 months ago</p><br>
+            <p>1 Answer</p>
+            <div class="ans1">
+                 <p><b>A</b>: Yes..Beachwalk can be used by anyone. It is a soft and a fresh smell.
+                    The way you feel when you are walking on the shore. It is not overpowering...it just lingers
+                    throughout the day. Delightfol and relaxing</p><br>
+                <p>1 months ago</p>
+            </div>
+        </div>
+        
+            <div class="qa_ans">
+                <h4>Q: Does the refill work for the 3.4 ox bottle</h4><br>
+                <p>Bstarr</p><br>
+                <p>19 days ago</p><br>
+                <p>1 Answer</p>
+                <div class="ans1">
+                    <p><b>A</b>: yes, it is possible
+                        Replica refill set is on sale, check it out.</p><br>
+                   <p>17 days ago</p>
+               </div>
+            </div>
+     
+        
+            <div class="qa_ans">
+                <h4>Q: Is this bottle refillable?</h4><br>
+                <p>Sandro</p><br>
+                <p>a month ago</p><br>
+                <p> Answer</p>
+                <div class="ans1">
+                    <p><b>A</b>: yes, it is possible
+                        Replica refill set is on sale, check it out.</p><br>
+                   <p>1 months ago</p>
+               </div>
+            </div>
+        
+    </div>
+
+</div>
+
+
+
+<footer>
+
+    <div id="foot">
+        <div class="device">
+            <div class="box">
+                <h4>FRAGRANCE SELECTION</h4>
+        
+                <p>Eau de toilette<br>
+                    Eau de parfum<br>
+                    Sets</p>
+        
+            </div>
+        
+        
+        
+            <div class="box">
+                <h4>FRAGRANCE COLLECTION</h4>
+        
+                <p>REPLICA<br>
+                    (untitled)<br>
+                    Mutiny</p>
+        
+            </div>
+        
+            <div class="box">
+                <h4>HOMESCENTING</h4>
+        
+                <p>Scented Candles<br>
+                    Diffusers</p>
+        
+            </div>
+        
+            <div class="box">
+                <h4>BATH & BODY</h4>
+            </div>
+        </div>
+
+        <div class="device">
+
+        <div class="box">
+            <h4>OTHERS</h4>
+            <p>Gifts & Sets</p>
+        </div>
+        
+        <div class="box">
+            <h4>TOOLS AND SERVICES</h4>
+        
+            <p>Store Locator<br>
+                Fragrance Finder<br>
+                Home Scenting Finder<br>
+                About Us</p>
+        
+        </div>
+        </div>
+        
+        
+        
+
+        
+
+        <div class="cookies">
+            <span>© Maison Margiela Fragrances 2022</span>
+        </div>
+
+        <div class="cook">
+            <span>Cookie · settings · Terms & Conditions · Site Map · Privacy Policy</span>
+        </div>
+
+    </div>
+    </footer>
+
+</body>
+
+</html>
